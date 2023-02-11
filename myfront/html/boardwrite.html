@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="../js/basic.js"></script>
+        <script src="../js/boardwrite.js"></script>
+    </head>
+    <body>
+        <div class = "boardwrite">
+            <form>
+                <fieldset>
+                    <legend>이미지파일</legend>
+                    <input type="file" name="f1" accept="image/jpeg, image/png, image/gif">
+                </fieldset>
+                <fieldset>
+                    <legend>일반파일</legend>
+                    <input type="file" name="f2" multiple>
+                </fieldset>
+                
+                <label>글제목:<div><input type="text" name="boardTitle"></div></label>
+                <label>글내용:<div><textarea name="boardContent"></textarea></div></label>
+                <!-- 라벨을 붙여도클릭을 해도 텍스트area포커스 이동 -->
+                <button>글쓰기</button>
+            </form>
+        </div>
+    </body>
+</html>

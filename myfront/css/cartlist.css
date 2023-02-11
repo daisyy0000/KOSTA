@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+div.cartlist{
+    width: 80%;
+    /* height: 300px; */
+    display: table;
+}
+div.cartlist>div.item{
+}
+
+div.cartlist>div.item>ul{
+    width: 100%;
+    height: 30px;
+    display: table-row;
+    width: 100%;
+    list-style-type: none;
+    padding-left: 0px;
+}
+div.cartlist>div.item>ul>li.prodNo{
+    width: 30%;
+    display: table-cell;
+    border-bottom: 1px solid;
+}
+div.cartlist>div.item>ul>li.quantity{
+    width: 70%;
+    display: table-cell;
+    border-bottom: 1px solid;
+    padding-left: 20px;
+}

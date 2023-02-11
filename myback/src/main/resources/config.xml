@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<settings>
+		<!-- 자동으로 카멜케이스 규칙으로 변환 -->
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+	</settings>
+	<typeAliases>
+		<typeAlias alias="Customer"
+			type="com.my.customer.vo.Customer" />
+		<typeAlias alias="Product" type="com.my.product.vo.Product" />
+		<typeAlias alias="OrderInfo"
+			type="com.my.order.vo.OrderInfo" />
+		<typeAlias alias="OrderLine"
+			type="com.my.order.vo.OrderLine" />
+	</typeAliases>
+
+
+
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver"
+					value="oracle.jdbc.driver.OracleDriver" />
+				<property name="url"
+					value="jdbc:oracle:thin:@localhost:1521:xe" />
+				<property name="username" value="test" />
+				<property name="password" value="test" />
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		<mapper resource="CustomerMapper.xml" />
+		<mapper resource="OrderMapper.xml" />
+
+	</mappers>
+</configuration>

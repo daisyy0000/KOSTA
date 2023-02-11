@@ -1,0 +1,38 @@
+div.orderlist>table{
+    width: 80%;
+}
+div.orderlist>table .orderNo, div.orderlist>table .orderDt, div.orderlist>table .lines{
+    border-bottom: 1px solid green ;
+    
+    padding: 0px;
+}
+div.orderlist>table .orderNo{
+    width: 15%;
+    text-align: center;
+}
+div.orderlist>table .orderDt{
+    width: 30%;
+    text-align: center;
+}
+div.orderlist>table tr>td.lines>div{
+    width: 100%;
+    /* border-bottom: 1px solid green; */
+}
+div.orderlist>table tr>td.lines>div>ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+div.orderlist>table tr>td.lines>div>ul>li{
+    display:inline-block;
+}
+
+div.orderlist>table tr>td.lines>div>ul>li.prodNo{
+    width: 20%;
+}
+div.orderlist>table tr>td.lines>div>ul>li.prodName{
+    width: 40%;
+}
+div.orderlist>table tr>td.lines>div>ul>li.orderQuantity{
+    width: 20%;
+    text-align: right;
+}

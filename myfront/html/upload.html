@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/upload.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="../js/basic.js"></script>
+        <script src="../js/upload.js"></script>
+    </head>
+    <body>
+        <!--이미지파일이 선택되자마자 그 이미지가 보여질 영역-->
+        <div class="show">
+            <!-- <img> -->
+        </div>
+        <div class="attach">
+            
+        </div>
+        <div class="form">
+                                                            <!--원래자기컴퓨터ip주소-->
+            <form method="post" enctype="multipart/form-data" action="http://localhost:8888/myback/upload"><br/>
+                <input type="text" name="t"><br/>
+                <input type="file" name="f" multiple accept="image/jpeg, image/png, image/gif"><br/>
+                <input type="checkbox" name="c" checked><br/>
+                <input type="submit" value="전송"><br/>
+                <button>전송1</button> <!--type="submit"으로 자동 설정됨/효과는 같음-->
+                
+            </form>
+            <button>일반버튼</button>  <!--그러나 폼태그밖에서의 버튼태그는 일반버튼(type="button"의 효과-->
+            
+        </div>
+    </body>
+
+</html>
